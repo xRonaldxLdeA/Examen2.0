@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="font-size: xx-large; text-align: center;">
+      Registro de Docente
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="form-login" class="log-box">
+    <form [formGroup]="formRegister">
+      <ion-grid>
+        <ion-row>
+          <ion-label class="subtitle-box">Registrarse</ion-label>
+        </ion-row>
+        <ion-row class="label-row">
+          <ion-col size="1">
+            <ion-icon name="person-outline"></ion-icon>
+          </ion-col>
+          <ion-col size="11">
+            <div class="text-box">
+              <ion-input formControlName="username" type="text" placeholder="Username"></ion-input>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row class="label-row">
+          <ion-col size="1">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+          </ion-col>
+          <ion-col size="11">
+            <div class="text-box">
+              <ion-input formControlName="password" type="password" placeholder="Password"></ion-input>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row class="label-row">
+          <ion-col size="1">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+          </ion-col>
+          <ion-col size="11">
+            <div class="text-box">
+              <ion-input formControlName="repeatPassword" type="password" placeholder="Repeat password"></ion-input>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </form>
+
+    <ion-button class="btn-box" (click)="guardar()">Registrarse</ion-button>
+    <ion-button class="btn-box2" [routerLink]="'../login'">Volver</ion-button>
+  </div>
+</ion-content>

@@ -1,0 +1,19 @@
+.center{
+    display:flex;
+    justify-content: center;
+}
+  
+.separador{
+    padding-top:15vh;
+}
+
+ion-toolbar {
+    --background: #1a1a1a;
+    color: #ffffff;
+}
+
+.btn-box{
+    width: 100%;
+    color: white;
+    --background: #042E54;
+  }

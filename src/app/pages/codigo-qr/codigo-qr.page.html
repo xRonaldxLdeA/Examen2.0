@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="font-size: xx-large; text-align: center;">
+      Leer Codigo Qr
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="welcome">
+    <ion-label>Bienvenido {{usuario.user}}</ion-label>
+  </div>
+  <div>
+    <ion-card class="card-present">
+      <ion-card-content>
+        <ion-button class="qr-btn" fill="solid" expand="block" (click)="scan()">Leer Qr</ion-button>
+        <div class="cuadro">
+          {{codigo}}
+        </div>
+        <ion-button class="btn-box2" [routerLink]="'../principal'">Cerrar Sesion</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

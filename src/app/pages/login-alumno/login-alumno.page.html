@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="font-size: xx-large; text-align: center;">
+      Alumno
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="form-login" class="log-box">
+    <form [formGroup]="formLogin">
+      <ion-grid>
+        <ion-row>
+          <ion-label class="subtitle-box">Inicio de sesión</ion-label>
+        </ion-row>
+        <ion-row class="label-row">
+          <ion-col size="1">
+            <ion-icon name="person-outline"></ion-icon>
+          </ion-col>
+          <ion-col size="11">
+            <div class="text-box">
+              <ion-input formControlName="username" type="text" placeholder="Username" [(ngModel)]="username.user">
+              </ion-input>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row class="label-row">
+          <ion-col size="1">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+          </ion-col>
+          <ion-col size="11">
+            <div class="text-box">
+              <ion-input formControlName="password" type="password" placeholder="Password"></ion-input>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </form>
+
+    <ion-button class="btn-box" (click)="ingresar()">Ingresar</ion-button>
+    <div class="other-btn-box">
+      <ion-button class="btn-box" fill="solid" [routerLink]="['/register-alumno']">Registrarse</ion-button>
+      <ion-button class="btn-box2" [routerLink]="'../principal'">Volver</ion-button>
+    </div>
+  </div>
+</ion-content>

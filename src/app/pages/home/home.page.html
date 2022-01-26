@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="font-size: xx-large; text-align: center;">
+      Generar Codigo Qr
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="welcome">
+    <ion-label>Bienvenido {{usuario.user}} Genera el Codigo QR</ion-label>
+  </div>
+  <div>
+    <ion-card class="card-present">
+      <ion-card-content>
+        <ion-button class="qr-btn" fill="solid" expand="block" [routerLink]="'../g-qr'">Generar</ion-button>
+        <ion-button class="btn-box2" [routerLink]="'../principal'">Cerrar Sesion</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

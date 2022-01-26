@@ -1,0 +1,43 @@
+.welcome {
+    width: 19em;
+    margin: 30px auto 30px auto;
+    color: white;
+    background-color: rgba($color: #1a1a1a, $alpha: 0.8);
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .qr-btn {
+    width: 100%;
+    color: white;
+    --background: #042e54;
+  }
+  
+  .btn-box2{
+    width: 100%;
+    color: white;
+    --background: #b3b44d;
+  }
+
+  ion-toolbar {
+    --background: #1a1a1a;
+    color: #ffffff;
+}
+
+.card-present {
+  width: 19em;
+  margin: 30px auto 30px auto;
+  color: white;
+  background-color: rgba($color: #1a1a1a, $alpha: 0.8);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.cuadro {
+  width: 14em;
+  margin: 10px auto 10px auto;
+  color: white;
+  background-color: rgba($color: #1a1a1a, $alpha: 0.8);
+  border-radius: 10px;
+  padding: 20px;
+}
