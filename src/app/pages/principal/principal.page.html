@@ -1,26 +1,38 @@
-<ion-header  [translucent]="true">
-  <ion-toolbar>
-    <ion-title style="font-size: xx-large; text-align: center;">
-     Bienvenido a la Aplicacion
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-<ion-content [fullscreen]="true">
-  <ion-grid class="center">
+
+<ion-content [fullscreen]="true" class="body">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Logo_DuocUC.svg/1200px-Logo_DuocUC.svg.png" class="logo">
+  <ion-grid>
     <ion-row>
-      <ion-col>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col class="separador" size="12">
-        <ion-button  expand="block" [routerLink]="'../login'" class="btn-box">
-          Docente
-        </ion-button>
-      </ion-col>
-      <ion-col class="separador" size= "12">
-        <ion-button expand="block" [routerLink]="'../login-alumno'" class="btn-box">
-          Alumno
-        </ion-button>
+      <ion-col class="centrado2" size="11">
+        <ion-card class="centrado">          
+          <div> 
+            <hr>
+            <hr>
+            <ion-title style="font-size: xx-large; text-align: center;" color="light">
+              Bienvenido a la
+              <hr>
+              Aplicacion
+             </ion-title>
+            <ion-grid class="center">
+              <ion-row>
+                <ion-col>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col  size="12">
+                  <ion-button  expand="block" [routerLink]="'../login'" class="btn-box">
+                    Docente
+                  </ion-button>
+                </ion-col>
+                <ion-col  size= "12">
+                  <ion-button expand="block" [routerLink]="'../login-alumno'" class="btn-box">
+                    Alumno
+                  </ion-button>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </div>
+        </ion-card>
       </ion-col>
     </ion-row>
   </ion-grid>

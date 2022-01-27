@@ -34,11 +34,7 @@ const routes: Routes = [
   {
     path: 'codigo-qr',
     loadChildren: () => import('./pages/codigo-qr/codigo-qr.module').then( m => m.CodigoQrPageModule)
-  },
-  {
-    path: 'g-qr',
-    loadChildren: () => import('./pages/g-qr/g-qr.module').then( m => m.GQrPageModule)
-  },
+  }
 ];
 
 @NgModule({

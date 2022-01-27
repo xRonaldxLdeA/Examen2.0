@@ -43,7 +43,7 @@ ion-toolbar {
   .btn-box2{
     width: 100%;
     color: white;
-    --background: #b3b44d;
+    --background: #ffd000;
   }
   
   
@@ -58,4 +58,17 @@ ion-toolbar {
     padding: 8px 0;
     margin: 1px 0;
     border-bottom: 1px solid white;
+  }
+
+  .center{
+    display:flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .body{
+    --background: url(../img/background.jpg) 0 0/100% 100% no-repeat;
+    --background-size: cover;
   }

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { PopoverController } from '@ionic/angular';
-import { BarcodeScanner } from '@ionic-native/barcode-scanner/ngx';
+import { BarcodeScanner, BarcodeScannerOptions } from '@ionic-native/barcode-scanner/ngx';
 
 @Component({
   selector: 'app-home',
@@ -32,12 +32,5 @@ export class HomePage {
     console.log('onDidDismiss resolved with role', role);
   }
 
-  scan() {
-    this.barcodeScanner.scan().then(barcodeData => {
-      this.codigo = barcodeData.text;
-      console.log('Barcode data', this.codigo);
-    }).catch(err => {
-      console.log('Error', err)
-    })
-  }
+  
 }

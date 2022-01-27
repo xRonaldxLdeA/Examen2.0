@@ -1,21 +1,78 @@
+<ion-menu contentId="menuContenido"  side="start" type="overlay">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Bienvenido {{ usuario.user }}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item>Mi Perfil</ion-item>
+      <ion-item>Configuracion</ion-item>
+    </ion-list>
+  </ion-content>
+  <ion-footer>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-button [routerLink]="'../principal'" expand="block" color="danger">
+            Cerrar Sesión
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-footer>
+</ion-menu>
+<div id="menuContenido"></div>
+
 <ion-header>
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
     <ion-title style="font-size: xx-large; text-align: center;">
-      Generar Codigo Qr
+      Cursos
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
-<ion-content>
-  <div class="welcome">
-    <ion-label>Bienvenido {{usuario.user}} Genera el Codigo QR</ion-label>
-  </div>
-  <div>
-    <ion-card class="card-present">
-      <ion-card-content>
-        <ion-button class="qr-btn" fill="solid" expand="block" [routerLink]="'../g-qr'">Generar</ion-button>
-        <ion-button class="btn-box2" [routerLink]="'../principal'">Cerrar Sesion</ion-button>
-      </ion-card-content>
-    </ion-card>
-  </div>
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label>001D_Programación de Aplicaciones Móviles</ion-label>
+          <ion-button (click)="mostrarQr = !mostrarQr" expand="block" slot="end">
+            QR 
+          </ion-button>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row *ngIf="mostrarQr">
+      <ion-col>
+        <ion-card>
+          <img src="https://cdn.discordapp.com/attachments/895517203217154063/935744223850934352/qr-code_1.png" alt="qr"
+          class="logo"
+          >
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label>002D_Administracion de Sistema</ion-label>
+          <ion-button (click)="mostrarQr2 = !mostrarQr2" expand="block" slot="end">
+            QR 
+          </ion-button>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row *ngIf="mostrarQr2">
+      <ion-col>
+        <ion-card>
+          <img src="https://cdn.discordapp.com/attachments/895517203217154063/935756794234560542/qr-code.png" alt="qr2"
+          class="logo"
+          >
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

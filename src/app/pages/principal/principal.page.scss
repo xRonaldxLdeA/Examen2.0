@@ -7,13 +7,51 @@
     padding-top:15vh;
 }
 
-ion-toolbar {
+/*ion-toolbar {
     --background: #1a1a1a;
     color: #ffffff;
-}
+}*/
 
 .btn-box{
     width: 100%;
     color: white;
     --background: #042E54;
+}
+
+.logo{
+    display:flex;
+    justify-content: center;
+    width: 50vw;
+    height: auto;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.body{
+    --background: url(../img/background.jpg) 0 0/100% 100% no-repeat;
+    --background-size: cover;
+  }
+
+  .centrado{
+    display:flex;
+    justify-content: center;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    position: absolute;
+    padding: 20px;
+
+  }
+
+  .centrado2{
+    display:flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    padding: 20px;
+
   }
